@@ -11,16 +11,39 @@
                     <view key="view" contentMode="scaleToFill" id="3">
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cuh-6B-iIq">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Cuh-6B-iIq" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="9jP-pf-adV"/>
+                            <constraint firstItem="Cuh-6B-iIq" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="PrL-vo-1HC"/>
+                            <constraint firstItem="Cuh-6B-iIq" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="s2L-gA-vQI"/>
+                            <constraint firstItem="Cuh-6B-iIq" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="wwY-o2-gQI"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="txtView" destination="Cuh-6B-iIq" id="Z3H-WQ-eLa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="211" y="24"/>
         </scene>
     </scenes>
     <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="txtView" candidateClass="UITextView"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
