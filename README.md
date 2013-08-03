@@ -37,4 +37,6 @@ Note: libsqlite3.0.dylib is required.
 
 If you want to turn off the success or failure logging on console than set the value of macro "D" to FALSE in ZeeSQLiteHelper class.
 
+More features and updates to come.
+
 Enjoy!
