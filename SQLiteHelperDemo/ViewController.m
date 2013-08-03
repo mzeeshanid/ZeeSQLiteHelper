@@ -20,7 +20,6 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    [ZeeSQLiteHelper initializeSQLiteDB];
     queryResults = [[NSString alloc] init];
     [self getTableInformation];
     [self getAllColumnTitles];
@@ -40,8 +39,6 @@
     [ZeeSQLiteHelper closeDatabase];
     
     queryResults = [queryResults stringByAppendingFormat:@"***TABLE INFROMATION***\n%@\n*** ***\n",results];
-
-//    NSLog(@"TableInformation:%@",results);
 }
 -(void)getAllColumnTitles
 {
@@ -51,7 +48,6 @@
     
     queryResults = [queryResults stringByAppendingFormat:@"***COLUMN TITLES***\n%@\n*** ***\n",results];
     
-//    NSLog(@"Column titles:%@",results);
 }
 -(void)getRowCountOfTable
 {
@@ -73,6 +69,5 @@
     
     [txtView setText:queryResults];
     
-//    NSLog(@"allRecords: %@",results);
 }
 @end

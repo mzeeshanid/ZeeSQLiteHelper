@@ -97,6 +97,7 @@
 				B30C506117A962080092D5D2 /* MainStoryboard.storyboard */,
 				B30C506417A962080092D5D2 /* ViewController.h */,
 				B30C506517A962080092D5D2 /* ViewController.m */,
+				B30C507017A964D90092D5D2 /* RecipeAppDB.sqlite */,
 				B30C505017A962080092D5D2 /* Supporting Files */,
 				B30C506C17A962290092D5D2 /* ZeeSQLiteHelper */,
 			);
@@ -106,7 +107,6 @@
 		B30C505017A962080092D5D2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B30C507017A964D90092D5D2 /* RecipeAppDB.sqlite */,
 				B30C505117A962080092D5D2 /* SQLiteHelperDemo-Info.plist */,
 				B30C505217A962080092D5D2 /* InfoPlist.strings */,
 				B30C505517A962080092D5D2 /* main.m */,
