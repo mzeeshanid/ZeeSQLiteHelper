@@ -6,8 +6,8 @@ SQLite helper
 Simple SQLite helper for performing general database tasks with few lines of code like fetching records from DB, Inserting, Updating and Deleting records.
 
 Steps are:
-1) Copy the ZeeSQLiteHelper class in your project.</br>
-2) Change the databse name in the ZeeSQLiteHelper class.</br>
+1) Copy the ZeeSQLiteHelper class in your project.<\br>
+2) Change the databse name in the ZeeSQLiteHelper class.<\br>
 3) Import it in your class.
 4) Open database by using the "initializeSQLiteDB" helper function like this [ZeeSQLiteHelper initializeSQLiteDB];
 5) Setup your query string like this NSString *query = @"PRAGMA table_info(recipes)";
