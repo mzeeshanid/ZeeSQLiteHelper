@@ -34,3 +34,5 @@ Steps are:
     [ZeeSQLiteHelper closeDatabase];
 
 If you want to turn off the success or failure logging on console than set the value of macro "D" to FALSE in ZeeSQLiteHelper class.
+
+Enjoy!
