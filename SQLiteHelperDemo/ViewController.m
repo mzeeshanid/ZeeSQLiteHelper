@@ -25,6 +25,7 @@
     [self getAllColumnTitles];
     [self getRowCountOfTable];
     [self getAllRecordsFromTable];
+    [self insertRecord];
 }
 - (void)didReceiveMemoryWarning
 {
@@ -69,5 +70,12 @@
     
     [txtView setText:queryResults];
     
+}
+-(void)insertRecord
+{
+    NSString *query = @"insert into categories (category) VALUES('Deserts')";
+    [ZeeSQLiteHelper initializeSQLiteDB];
+    [ZeeSQLiteHelper executeQuery:query];
+    [ZeeSQLiteHelper closeDatabase];
 }
 @end
